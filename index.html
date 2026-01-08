@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Huffman Coding Visualizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Huffman Coding Visualizer</h1>
+    <p class="subtitle">Step-by-step visualisering af Huffman Coding (træ, koder, encoding og kompression)</p>
+  </header>
+
+  <main class="grid">
+    <section class="panel">
+      <h2>Input</h2>
+      <textarea id="inputText" rows="4">banana</textarea>
+      <div class="controls">
+        <button id="resetBtn">Reset</button>
+        <button id="nextBtn">Næste step</button>
+      </div>
+      <p id="status" class="status"></p>
+    </section>
+
+    <section class="panel">
+      <h2>Frekvenser</h2>
+      <div id="freqView"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Priority Queue</h2>
+      <div class="hint">Mindste øverst (sorteret efter vægt)</div>
+      <div id="pqView"></div>
+    </section>
+
+    <section class="panel wide">
+      <h2>Huffman-træ</h2>
+      <svg id="treeSvg" width="100%" height="380"></svg>
+      <div class="hint">Blad: <b>char:weight</b> • Intern node: <b>weight</b></div>
+    </section>
+
+    <section class="panel wide">
+      <h2>Koder (char → bits)</h2>
+      <div id="codesView"></div>
+    </section>
+
+    <section class="panel wide">
+      <h2>Encoded output + kompression</h2>
+      <div id="encodedView"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
