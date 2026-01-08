@@ -2,8 +2,9 @@
 
 Step-by-step visualisering af Huffman Coding, herunder opbygning af frekvenstabel, priority queue, Huffman-træ, generering af koder og encoding med kompression.
 
-![Screenshot af Huffman Coding Visualizer](./screenshot.png)
+![Screenshot af Huffman Coding Visualizer](./ffffff.png)
 
+https://jonas-kestenholz.github.io/DSA-eksamen/
 ---
 
 ## Projektet
